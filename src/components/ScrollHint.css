@@ -1,0 +1,43 @@
+.scroll-hint {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  z-index: 50;
+  pointer-events: none;
+  color: #999;
+
+  /* wait for page content to animate in, then start the breathe loop */
+  animation: scroll-breathe 4s ease-in-out infinite;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
+/* when user has scrolled, override the loop and hide permanently */
+.scroll-hint--gone {
+  animation: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.scroll-hint__label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+}
+
+.scroll-hint__chevron {
+  display: block;
+}
+
+@keyframes scroll-breathe {
+  0%   { opacity: 0; }
+  15%  { opacity: 0.5; }   /* fade in */
+  45%  { opacity: 0.5; }   /* hold */
+  65%  { opacity: 0; }     /* fade out */
+  100% { opacity: 0; }     /* pause before next cycle */
+}
+

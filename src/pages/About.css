@@ -1,0 +1,908 @@
+.about {
+  min-height: 100vh;
+}
+
+.about-hero {
+  padding: 8rem 4rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 6rem;
+  align-items: end;
+}
+
+.about-hero-content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+}
+
+.about-hero-content.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-hero-photo {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+  align-self: end;
+}
+
+.about-hero-photo.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-hero-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 8px;
+}
+
+.about-title {
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 2rem 0;
+}
+
+.about-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #000;
+  max-width: 650px;
+  margin: 0;
+  opacity: 60%;
+}
+
+.about-subtitle a {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #000;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.about-subtitle a:hover {
+  opacity: 60%;
+}
+
+.about-socials {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.about-socials a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: #000;
+  opacity: 60%;
+  color: #fff;
+  transition: opacity 0.3s ease, transform 0.3s ease;;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.about-socials a:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.biography-section {
+  padding: 10rem 4rem 8rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.biography-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 6rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+}
+
+.biography-content.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-label {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-image: 
+    linear-gradient(white, white),
+    linear-gradient(to right, #000000, #CFCFCF);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  display: inline-block;
+}
+
+.bio-text {
+  max-width: 700px;
+}
+
+.bio-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #000;
+  margin: 0 0 1.5rem 0;
+}
+
+.bio-text p:last-child {
+  margin-bottom: 0;
+}
+
+.experience-section {
+  padding: 4rem 4rem 8rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-top: 1px solid #E5E5E5;
+}
+
+.experience-header {
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+}
+
+.experience-header.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-left: 200px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 6rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+  position: relative;
+}
+
+.timeline-item.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-year {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 0.02em;
+  opacity: 50%;
+  left: -2rem;
+  margin-top: 0.5rem;
+}
+
+.timeline-content {
+  max-width: 600px;
+}
+
+.timeline-role {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+  color: #000;
+}
+
+.timeline-company {
+  font-size: 1rem;
+  color: #000;
+  margin: 0 0 1rem 0;
+  opacity: 60%;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 550px;
+  color: #000;
+  margin: 0;
+}
+
+.services-section {
+  padding: 4rem 4rem 8rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-top: 1px solid #E5E5E5;
+}
+
+.services-header {
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+}
+
+.services-header.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding-left: 200px;
+}
+
+.service-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+  padding: 2rem 0;
+}
+
+.service-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+  color: #000;
+}
+
+.service-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000;
+  margin: 0;
+  opacity: 60%;
+}
+
+.skills-section {
+  padding: 4rem 4rem 8rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-top: 1px solid #E5E5E5;
+}
+
+.skills-header {
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+}
+
+.skills-header.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skills-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 6rem;
+  margin-left: 200px;
+}
+
+.skill-category {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+}
+
+.skill-category.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.category-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  color: #000;
+  letter-spacing: -0.01em;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  font-size: 1rem;
+  color: #000;
+  opacity: 60%;
+  line-height: 1.6;
+}
+
+
+/* Large Monitors */
+@media (min-width: 1920px) {
+  .about-hero {
+    padding: 9rem 6rem 5rem;
+    max-width: 1800px;
+    grid-template-columns: 1fr 420px;
+  }
+
+  .about-title {
+    font-size: 9rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.15rem;
+    max-width: 800px;
+  }
+
+  .about-hero-img {
+    height: 580px;
+  }
+
+  .biography-section,
+  .experience-section,
+  .services-section,
+  .skills-section {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    max-width: 1800px;
+  }
+
+  .bio-text {
+    max-width: 800px;
+  }
+
+  .bio-text p {
+    font-size: 1.15rem;
+  }
+
+  .timeline-role {
+    font-size: 1.6rem;
+  }
+
+  .timeline-description {
+    font-size: 1.05rem;
+    max-width: 650px;
+  }
+
+  .services-grid {
+    gap: 3.5rem;
+  }
+
+  .service-title {
+    font-size: 1.3rem;
+  }
+
+  .service-description {
+    font-size: 1.05rem;
+  }
+
+  .skills-categories {
+    gap: 4.5rem 7rem;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  .skill-tag {
+    font-size: 1.05rem;
+  }
+}
+
+/* XL Monitors */
+@media (min-width: 2560px) {
+  .about-hero {
+    padding: 10rem 8rem 6rem;
+    max-width: 2200px;
+    grid-template-columns: 1fr 500px;
+    gap: 8rem;
+  }
+
+  .about-title {
+    font-size: 11rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.25rem;
+    max-width: 900px;
+  }
+
+  .about-hero-img {
+    height: 680px;
+  }
+
+  .biography-section,
+  .experience-section,
+  .services-section,
+  .skills-section {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    max-width: 2200px;
+  }
+
+  .biography-content {
+    grid-template-columns: 240px 1fr;
+    gap: 8rem;
+  }
+
+  .section-label {
+    font-size: 1.3rem;
+  }
+
+  .bio-text {
+    max-width: 900px;
+  }
+
+  .bio-text p {
+    font-size: 1.2rem;
+  }
+
+  .timeline {
+    margin-left: 240px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 180px 1fr;
+    gap: 8rem;
+  }
+
+  .timeline-year {
+    font-size: 0.95rem;
+  }
+
+  .timeline-role {
+    font-size: 1.8rem;
+  }
+
+  .timeline-company {
+    font-size: 1.1rem;
+  }
+
+  .timeline-description {
+    font-size: 1.15rem;
+    max-width: 700px;
+  }
+
+  .services-grid {
+    padding-left: 240px;
+    gap: 4rem;
+  }
+
+  .service-title {
+    font-size: 1.4rem;
+  }
+
+  .service-description {
+    font-size: 1.1rem;
+  }
+
+  .skills-categories {
+    margin-left: 240px;
+    gap: 5rem 8rem;
+  }
+
+  .category-title {
+    font-size: 1.4rem;
+  }
+
+  .skill-tag {
+    font-size: 1.1rem;
+  }
+}
+
+/* Macbook 13" / MacBook Air */
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .about-hero {
+    padding: 8rem 3rem 0;
+    max-width: 1200px;
+  }
+
+  .about-title {
+    font-size: 7rem;
+  }
+
+  .biography-section,
+  .experience-section,
+  .services-section,
+  .skills-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 1200px;
+  }
+
+  .biography-content {
+    grid-template-columns: 180px 1fr;
+    gap: 4rem;
+  }
+
+  .timeline {
+    margin-left: 160px;
+  }
+
+  .services-grid {
+    padding-left: 160px;
+  }
+
+  .skills-categories {
+    margin-left: 160px;
+    gap: 3.5rem 5rem;
+  }
+
+  .timeline-item {
+    gap: 4rem;
+  }
+
+  .timeline-role {
+    font-size: 1.35rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .about-hero {
+    padding: 6rem 2.5rem 3rem;
+    gap: 2rem;
+  }
+
+  .about-title {
+    font-size: 5rem;
+  }
+
+  .biography-section,
+  .experience-section,
+  .services-section,
+  .skills-section {
+    padding: 3rem 2.5rem 6rem;
+  }
+
+  .biography-content {
+    grid-template-columns: 180px 1fr;
+    gap: 4rem;
+  }
+
+  .timeline {
+    margin-left: 0;
+  }
+
+  .timeline-item {
+    gap: 3rem;
+  }
+
+  .services-grid {
+    padding-left: 0;
+  }
+
+  .skills-categories {
+    margin-left: 0;
+    gap: 3rem 4rem;
+  }
+}
+
+
+/* Tablet portrait */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 6rem 2rem 2.5rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-hero-photo {
+    width: 100%;
+  }
+
+  .about-hero-img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+
+  .about-title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-subtitle a {
+    font-size: 1rem;
+  }
+
+  .biography-section {
+    padding: 2.5rem 2rem 5rem;
+  }
+
+  .biography-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .section-label {
+    font-size: 1.05rem;
+  }
+
+  .bio-text p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .experience-section {
+    padding: 2.5rem 2rem 5rem;
+  }
+
+  .experience-header {
+    margin-bottom: 3rem;
+  }
+
+  .timeline {
+    margin-left: 0;
+    gap: 3rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 130px 1fr;
+    gap: 2rem;
+  }
+
+  .timeline-role {
+    font-size: 1.3rem;
+  }
+
+  .timeline-description {
+    font-size: 0.95rem;
+  }
+
+  .services-section {
+    padding: 2.5rem 2rem 5rem;
+  }
+
+  .services-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-left: 0;
+  }
+
+  .service-card {
+    padding: 1.5rem 0;
+  }
+
+  .skills-section {
+    padding: 2.5rem 2rem 5rem;
+  }
+
+  .skills-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .skills-categories {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    gap: 2.5rem 3rem;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  .about-hero {
+    padding: 5rem 1.25rem 2rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    position: relative;
+  }
+
+  .about-hero-photo {
+    width: 100%;
+  }
+
+  .about-hero-img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+
+  .about-title {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .about-subtitle a {
+    font-size: 0.9rem;
+  }
+  
+  .skills-showcase {
+    position: absolute;
+    top: 4.5rem;
+    right: 2.75rem;
+    width: 55px;
+  }
+  
+  .icon-orb {
+    width: 60px;
+  }
+
+  .biography-section {
+    padding: 3rem 1.4rem 3rem;
+  }
+
+  .biography-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .section-label {
+    font-size: 1rem;
+    padding: 0.4rem 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .bio-text p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .experience-section {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .experience-header {
+    margin-bottom: 2rem;
+  }
+
+  .timeline {
+    margin-left: 0;
+    gap: 2.5rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .timeline-year {
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-role {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .timeline-company {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-description {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .services-section {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .services-header {
+    margin-bottom: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-left: 0;
+  }
+
+  .service-card {
+    padding: 1rem 0;
+  }
+
+  .service-title {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-description {
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  .skills-section {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .skills-header {
+    margin-bottom: 2rem;
+  }
+
+  .skills-categories {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    gap: 2rem 1.5rem;
+  }
+
+  .category-title {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .skill-tag {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 360px) {
+  .about-hero {
+    padding: 4.5rem 1rem 1.5rem;
+  }
+
+  .about-title {
+    font-size: 2.4rem;
+  }
+
+  .skills-showcase {
+    right: 1.5rem;
+    width: 45px;
+  }
+
+  .icon-orb {
+    width: 50px;
+  }
+
+  .biography-section {
+    padding: 2.5rem 1rem 2.5rem;
+  }
+
+  .experience-section,
+  .services-section,
+  .skills-section {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+
+  .skills-categories {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem;
+  }
+
+  .timeline-role {
+    font-size: 1.05rem;
+  }
+}
